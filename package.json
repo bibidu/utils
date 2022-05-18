@@ -1,12 +1,12 @@
 {
   "name": "@xzzs/utils",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.3",
   "private": false,
   "description": "common utils",
   "main": "dist/index.js",
   "scripts": {
     "start": "NODE_ENV=development tsup src/index.ts --watch",
-    "build": "tsup src/index.ts --dts --minify",
+    "build": "tsup src/index.ts --dts --minify && npm run pre-all",
     "pre-all": "node auto-edit",
     "test": "vitest",
     "test:ui": "vitest --ui"

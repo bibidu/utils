@@ -12,3 +12,5 @@
 - createObject
 
 - createResolved
+
+- tryRequire
